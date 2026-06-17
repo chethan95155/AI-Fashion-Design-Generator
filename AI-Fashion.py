@@ -6,7 +6,7 @@ from PIL import Image
 # CONFIGURE GEMINI API
 # ==================================================
 
-GOOGLE_API_KEY = "YOUR_GEMINI_API_KEY_HERE"  # Replace with your actual Gemini API key
+GOOGLE_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
